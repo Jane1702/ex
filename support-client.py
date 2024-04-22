@@ -19,8 +19,6 @@ from langchain.indexes import VectorstoreIndexCreator
 from langchain.docstore.document import Document
 
 
-os.environ["OPENAI_API_KEY"] = "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"
-api_key = "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"
 
 
 st.header("Support Client 💬 📚")
