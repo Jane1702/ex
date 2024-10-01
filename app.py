@@ -37,7 +37,8 @@ for message in st.session_state.messages: # Display the prior chat messages
 if st.session_state.messages[-1]["role"] != "assistant":
     with st.chat_message("assistant"):
         with st.spinner("Thinking..."):
-            response = index.query(prompt, llm = ChatOpenAI(model="gpt-4-1106-preview"))
+            #response = index.query(prompt, llm = ChatOpenAI(model="gpt-4-1106-preview"))
+            response = index.query(prompt, llm = ChatOpenAI(model="gpt-4o"))
             st.write(response)
             message = {"role": "assistant", "content": response}
             st.session_state.messages.append(message)
