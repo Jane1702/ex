@@ -1,38 +1,16 @@
-#pip>=23.3.1
-langchain
+langchain ==0.0.347
+pydantic==1.10.10
+docarray==0.32.1
 langchain-community
-#pysqlite3-binary
+pysqlite3-binary
 #streamlit==1.28.0
 streamlit
-requests
 #llama_index
 openai
 #docx2txt
-unstructured
+unstructured == 0.12.5
 unstructured[docx]
 unstructured[pdf]
 opencv-python-headless
-chromadb
+chromadb == 0.3.29
 tiktoken
-#tesseract
-pytesseract==0.3.8
-
-#PyPDF2==3.0.1
-#PyMuPDF
-#python-docx
-#pypdf2
-
-#libgl1-mesa-glx
-#torch
-#accelerate
-#sentence_transformers
-#streamlit_chat
-#streamlit
-#faiss-cpu
-#tiktoken
-#ctransformers
-#huggingface-hub
-#pypdf
-#python-dotenv
-#replicate
-#docx2txt
