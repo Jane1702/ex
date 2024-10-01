@@ -20,7 +20,8 @@ if "messages" not in st.session_state.keys(): # Initialize the chat message hist
 def load_data():
     with st.spinner(text="Loading information – hang tight! This should take 1-2 minutes."):
         loader = DirectoryLoader("SOURCE_DOCUMENTS/")
-        index = VectorstoreIndexCreator().from_loaders([loader])
+        embedding_model = ChatOpenAI(model="gpt-4-1106-preview")
+        index = VectorstoreIndexCreator(embedding=embedding_model).from_loaders([loader])
         return index
     
 index = load_data()
