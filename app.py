@@ -7,7 +7,7 @@ from langchain_community.chat_models import ChatOpenAI
 from langchain_community.document_loaders import DirectoryLoader
 from langchain.indexes import VectorstoreIndexCreator
 from langchain.embeddings import OpenAIEmbeddings
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "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"
 
 
 st.header("Trang's chatbot 💬 📚")
