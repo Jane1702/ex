@@ -1,6 +1,6 @@
-langchain ==0.0.347
-pydantic==1.10.10
-docarray==0.32.1
+langchain 
+pydantic
+docarray
 langchain-community
 pysqlite3-binary
 #streamlit==1.28.0
@@ -8,7 +8,7 @@ streamlit
 #llama_index
 openai
 #docx2txt
-unstructured == 0.12.5
+unstructured 
 unstructured[docx]
 unstructured[pdf]
 opencv-python-headless
