@@ -6,6 +6,7 @@ from langchain_community.chat_models import ChatOpenAI
 #from langchain.document_loaders import DirectoryLoader
 from langchain_community.document_loaders import DirectoryLoader
 from langchain.indexes import VectorstoreIndexCreator
+from langchain.embeddings import OpenAIEmbeddings
 os.environ["OPENAI_API_KEY"] = "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"
 
 
@@ -20,7 +21,7 @@ if "messages" not in st.session_state.keys(): # Initialize the chat message hist
 def load_data():
     with st.spinner(text="Loading information – hang tight! This should take 1-2 minutes."):
         loader = DirectoryLoader("SOURCE_DOCUMENTS/")
-        embedding_model = ChatOpenAI(model="gpt-4-1106-preview")
+        embedding_model = OpenAIEmbeddings()
         index = VectorstoreIndexCreator(embedding=embedding_model).from_loaders([loader])
         return index
     
