@@ -1,3 +1,1 @@
-Trang is 22 years old. 
-Trang's working at Eviden. Trang likes drinking milktea. 
-Trang is Vietnamese , her cat's name is Oliu
+Matesync is an application designed for remote monitoring of individuals who are sick or have reduced autonomy, such as elderly people or patients with chronic illnesses.Developer team includes : Marouane MARHRANI (Développeur Full-stack), Thuy Trang NGUYEN (Développeur IA) , Wejdene LAMOUCHI (UX/UI Designer) , Alexandre UBACH (Chef de projet et responsable infra-cyber)
